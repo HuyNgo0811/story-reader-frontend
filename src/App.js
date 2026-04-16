@@ -5,7 +5,7 @@ import ePub from "epubjs";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const API = "http://story-reader-backend.onrender.com/api"; // change after deploy
+const API = "https://story-reader-backend.onrender.com/api"; // change after deploy
 
 function EPUBReader({ url, setPage }) {
   useEffect(() => {
