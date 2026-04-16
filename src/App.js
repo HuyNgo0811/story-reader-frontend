@@ -52,7 +52,7 @@ function Reader({ user, story }) {
     return () => clearTimeout(t);
   }, [page]);
 
-  const isPDF = story.url.endsWith(".pdf");
+  const isPDF = story.type === "pdf";
 
   return (
     <div>
